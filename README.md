@@ -6,6 +6,9 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 
 - [ ] 1° analyser les habitudes de navigation (set d'évaluation) => optimisation des requêtes. (Lila et autre)
 
+cb de requêtes par personne, cb de personnes ont utilisé plusieurs langues pour 1 requete, une personne utilise le téléphone et l'ordi, 
+corrélation entre la langue et le pays, intervalle de temps entre les requêtes, nb de pays recherchés par personne. pays ou langues plus présentes ? 
+
 - [ ] 2° construire une grande matrice avec toutes les combinaisons possibles en ligne (ville, langue, mobile). Pour les dates faire un tirage aléatoire à posteriori (une au début puis plusieurs, ATTENTION : ranger dans l'ordre décroissant les requêtes 
 
 
