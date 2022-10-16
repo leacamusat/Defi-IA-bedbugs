@@ -35,4 +35,4 @@ Flavie & Léa 13/10/2022 & 14/10/2022 :
 
 Remarques:
 ======================
-** /.\ Attention ** En exporant le set de test, on voit que le pays **belgian** est présent alors qu'il n'était pas mentionné dans la description des features fournie. Il faut donc le rajouter dans le tableau allrequest.csv
+**/.\ Attention** En exporant le set de test, on voit que le pays **belgian** est présent alors qu'il n'était pas mentionné dans la description des features fournie. Il faut donc le rajouter dans le tableau allrequest.csv
