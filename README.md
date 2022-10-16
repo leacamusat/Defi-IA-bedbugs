@@ -22,7 +22,7 @@ Tâches à réasliser:
 
 Historique des requêtes: 
 ======================
-- Flavie 15/10/2022 : \
+Flavie 15/10/2022 : \
  * 629 requêtes sur les jours suivants (d'après la répartition de la variable date en prenant un dépassement de 2)
 (1 requêtes par ligne du tableau minimum)
 * 5 requêtes 1 avatar = 1 requetes = 1 jour, jour aléatoire dans la liste : 
