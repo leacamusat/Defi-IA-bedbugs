@@ -14,7 +14,7 @@ Réponses à Lila :
     On a days= np.random.choice(selected_days, number_days, replace=False) et days= np.random.choice(range(0,45), number_days, replace=False) à la suite donc seule la 2e version est prise en compte.
     
 
-    On crée un "avatar_name" avec la date du jour mais après je n'ai pas l'impression qu'on stocke cette info quelque part. Une fois le tableau constitué, on ne peut pas retrouver cette info. ``en effet in stocke que l'ID c'est bizarre, j'espère qu'on va le retrouver ``
+    On crée un "avatar_name" avec la date du jour mais après je n'ai pas l'impression qu'on stocke cette info quelque part. Une fois le tableau constitué, on ne peut pas retrouver cette info. ``en effet in stocke que l'ID c'est bizarre... j'ai créé à la fin du code une partie pour enregistrer une table de conversion entre les deux, a voir si tu veux fusionner dans nos datas, ou alor on ira juste lire ??? ``
 
     l'Id de a request est i dans la ligne add_to_our_requests = ... mais du coup, si on fait tourner plusieurs fois le même code, on n'aura pas des requêtes avec le même id ? comment on va faire pour les différencier ? Il ne faudrait pas mettre request_num à la place de i ? ``je ne suis pas sure d'avoir compris la question, mais je crois que le numéro de la requête c'est à quelle requete ca correspond dans notre tableau avec toutes les permutation de requests possibles qu'on a crées. 
 
