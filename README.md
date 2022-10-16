@@ -22,7 +22,7 @@ Tâches à réasliser:
 
 Historique des requêtes: 
 ======================
-Flavie 15/10/2022 : \
+Flavie 15/10/2022 : 
  * 629 requêtes sur les jours suivants (d'après la répartition de la variable date en prenant un dépassement de 2)
 (1 requêtes par ligne du tableau minimum)
 * 5 requêtes 1 avatar = 1 requetes = 1 jour, jour aléatoire dans la liste : 
@@ -30,5 +30,5 @@ selected_days = [0,1, 2, 3, 4 , 5, 6, 7, 8, 13, 14, 15, 16, 17, 18, 19, 20, 21, 
 * 1 avatar = 1 jour = 1 requête
 
 
-Flavie & Léa 13/10/2022 & 14/10/2022 : \
-10 requêtes 1 avatar = 1 requetes = 1 jour, jour aléatoire
+Flavie & Léa 13/10/2022 & 14/10/2022 : 
+* 10 requêtes 1 avatar = 1 requetes = 1 jour, jour aléatoire
