@@ -32,3 +32,7 @@ selected_days = [0,1, 2, 3, 4 , 5, 6, 7, 8, 13, 14, 15, 16, 17, 18, 19, 20, 21, 
 
 Flavie & Léa 13/10/2022 & 14/10/2022 : 
 * 10 requêtes 1 avatar = 1 requetes = 1 jour, jour aléatoire
+
+Remarques:
+======================
+** /.\ Attention ** En exporant le set de test, on voit que le pays **belgian** est présent alors qu'il n'était pas mentionné dans la description des features fournie. Il faut donc le rajouter dans le tableau allrequest.csv
