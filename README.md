@@ -4,16 +4,17 @@ https://www.kaggle.com/code/maxhalford/tutoriel-d-fi-ia-2023/notebook
 clé : 
 f80b400f-3d29-43f0-8049-214a756ff0b3
 
-- [ ] 1° analyser les habitudes de navigation (set d'évaluation) => optimisation des requêtes. (Lila et autre)
-
-cb de requêtes par personne, cb de personnes ont utilisé plusieurs langues pour 1 requete, une personne utilise le téléphone et l'ordi, 
-corrélation entre la langue et le pays, intervalle de temps entre les requêtes, nb de pays recherchés par personne. pays ou langues plus présentes ? 
+- [X] 1° analyser les habitudes de navigation (set d'évaluation) => optimisation des requêtes. (Lila et autre)
+  * Première description du jeu de données
+  * Calcul des villes et langues les plus recherchées
+  * Répartition de la variable date
+  * Calcul du nombre de requêtes par personne
+  * Calul du nombre de personnes ayant utilisé plusieurs langues pour leurs requêtes
+  * Calul du nombre de personnes ayant utilisé le téléphone et l'ordinateur
 
 - [ ] 2° construire une grande matrice avec toutes les combinaisons possibles en ligne (ville, langue, mobile). Pour les dates faire un tirage aléatoire à posteriori (une au début puis plusieurs, ATTENTION : ranger dans l'ordre décroissant les requêtes 
 
-
 - [ ] 3° créer le tirage et créer la requête. 
-
 
 
 Historique des requêtes
