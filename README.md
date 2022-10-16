@@ -4,6 +4,22 @@ https://www.kaggle.com/code/maxhalford/tutoriel-d-fi-ia-2023/notebook
 clé : 
 f80b400f-3d29-43f0-8049-214a756ff0b3
 
+
+Réponses à Lila :
+    Dans la commande chosen_idx = np.random.choice(idx_available, replace = False, size = nb_request), on tire aléatoirement sans remise len(df) = 468 éléments parmi une liste de taille 468: [0,1,...,467] ce qui revient exactement à choisir la liste [0,1,...,467] directement (sans avoir besoin du random.choice). Est-ce voulu ? 
+
+    our_requests = pandas.read_csv('all_our_requests_done.csv', header = 0) au début, ce tableau est vide non ? Pour la première utilisation, il s'agit de allrequest.csv ? J'imagine qu'à l'origine il devait y avoir marqué allrequest.csv et non pas all_our_requests_done.csv. 
+    ``Pour la première utilisation on a crée un tableau vide avec seulement les noms des colonnes qu'on souhaite ``
+
+    On a days= np.random.choice(selected_days, number_days, replace=False) et days= np.random.choice(range(0,45), number_days, replace=False) à la suite donc seule la 2e version est prise en compte.
+    
+
+    On crée un "avatar_name" avec la date du jour mais après je n'ai pas l'impression qu'on stocke cette info quelque part. Une fois le tableau constitué, on ne peut pas retrouver cette info. ``en effet in stocke que l'ID c'est bizarre, j'espère qu'on va le retrouver ``
+
+    l'Id de a request est i dans la ligne add_to_our_requests = ... mais du coup, si on fait tourner plusieurs fois le même code, on n'aura pas des requêtes avec le même id ? comment on va faire pour les différencier ? Il ne faudrait pas mettre request_num à la place de i ? ``je ne suis pas sure d'avoir compris la question, mais je crois que le numéro de la requête c'est à quelle requete ca correspond dans notre tableau avec toutes les permutation de requests possibles qu'on a crées. 
+
+
+
 Tâches à réasliser: 
 ======================
 
