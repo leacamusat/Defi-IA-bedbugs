@@ -43,11 +43,19 @@ Tâches à réasliser:
 
 
 Historique des requêtes: 
-======================
+========================
+
+
 03/11/2022 :
 * 5 * 18 requêtes pour le belge qui n'était pas presents
 
-
+Flavie 16/10/2022 : 
+ * 3 * 629 requêtes sur les jours suivants (d'après la répartition de la variable date en prenant un dépassement de 2)
+(1 requêtes par ligne du tableau minimum)
+ selected_daysA = [0,1,2,3,4,5,6,7,8]
+ selected_daysB = [13,14,15,16,17,18,19,20,21,22,23]
+ selected_daysC = [32,33,24,35,36,37,38,39,40]
+* 1 avatar = 1 jour = 1 requête
 
 Flavie 15/10/2022 : 
  * 629 requêtes sur les jours suivants (d'après la répartition de la variable date en prenant un dépassement de 2)
