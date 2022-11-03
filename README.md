@@ -1,3 +1,5 @@
+Petit document récapitulatif : https://www.overleaf.com/7664353796mnjshyqhnbwb 
+
 # Defi-IA-bedbugs
 https://www.kaggle.com/code/maxhalford/tutoriel-d-fi-ia-2023/notebook
 
