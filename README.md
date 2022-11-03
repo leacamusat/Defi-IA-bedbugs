@@ -6,10 +6,7 @@ https://www.kaggle.com/code/maxhalford/tutoriel-d-fi-ia-2023/notebook
 clé : 
 f80b400f-3d29-43f0-8049-214a756ff0b3
 
-
-Note en AIF on a explorer les données juste avec : 
-from pandas_profiling import ProfileReport
-ProfileReport(pd.Dataframe, sort="None")
+## Note : le modèle Random forest est très lourd ( trop lours pour github) il est sur mon ordinateur
 
 Réponses à Lila :
     Dans la commande chosen_idx = np.random.choice(idx_available, replace = False, size = nb_request), on tire aléatoirement sans remise len(df) = 468 éléments parmi une liste de taille 468: [0,1,...,467] ce qui revient exactement à choisir la liste [0,1,...,467] directement (sans avoir besoin du random.choice). Est-ce voulu ? 
