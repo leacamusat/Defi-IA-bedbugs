@@ -44,6 +44,11 @@ Tâches à réasliser:
 
 Historique des requêtes: 
 ======================
+03/11/2022 :
+* 5 * 18 requêtes pour le belge qui n'était pas presents
+
+
+
 Flavie 15/10/2022 : 
  * 629 requêtes sur les jours suivants (d'après la répartition de la variable date en prenant un dépassement de 2)
 (1 requêtes par ligne du tableau minimum)
