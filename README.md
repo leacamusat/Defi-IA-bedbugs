@@ -8,6 +8,17 @@ clé :
 f80b400f-3d29-43f0-8049-214a756ff0b3
 
 -------------------------------------------
+
+
+1) mettre dans un dossier l'environnement comme ceci : /</br>
+**dossier_local /</br>
+&emsp; &emsp;├─inpainting/</br>
+&emsp; &emsp; &emsp; &emsp;├─ mask.py </br>
+&emsp; &emsp;&emsp; &emsp; ├─ discriminator.py</br>
+&emsp; &emsp; &emsp; &emsp;├─ generator.py </br>
+&emsp; &emsp;&emsp; &emsp; ├─ unet.py</br>
+&emsp; &emsp;├─ jupyter_notebook (ex : MNIST_mask.py, MNIST...)**
+
 # Organisation des fichiers 
 
 /</br> 
