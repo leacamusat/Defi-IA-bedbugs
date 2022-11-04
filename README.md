@@ -16,7 +16,6 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 &emsp; &emsp;├─ application gradio </br>
 &emsp; &emsp;├─ Modeles.ipynb</br>
 &emsp; &emsp;├─ soumission_kaggle.ipynb
-
 **
 ## Lancer l'application gradio 
 
