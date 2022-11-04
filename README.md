@@ -19,8 +19,7 @@ Modeles.ipynb #modèles testés et analyse descriptive des variables d'entrainem
 pricing_requests_done.csv #résultats requêtes testées </br>
 ExploreTestSet.ipynb #stat descriptive sur le jeu de données d'évaluation kaggle</br>
 allrequest.csv #toutes les combinaisons de variables qualitatives possibles </br>
-sample_submission.csv #génération du fichier de soumission à l'aide du modèle enregistré en .sav
-**
+sample_submission.csv #génération du fichier de soumission à l'aide du modèle enregistré en .sav **
 
 
 
