@@ -3,8 +3,25 @@ Petit document récapitulatif : https://www.overleaf.com/7664353796mnjshyqhnbwb
 # Defi-IA-bedbugs
 https://www.kaggle.com/code/maxhalford/tutoriel-d-fi-ia-2023/notebook
 
+
 clé : 
 f80b400f-3d29-43f0-8049-214a756ff0b3
+
+-------------------------------------------
+# Organisation des fichiers 
+**dossier_local /</br>
+&emsp; &emsp;├─models_sav/</br>
+&emsp; &emsp; &emsp; &emsp;├─ xgboost.sav </br>
+&emsp; &emsp;&emsp; &emsp; ├─ .sav</br>
+&emsp; &emsp;├─ application gradio </br>
+&emsp; &emsp;├─ Modeles.ipynb</br>
+&emsp; &emsp;├─ soumission_kaggle.ipynb
+
+**
+## Lancer l'application gradio 
+
+python gradio_defiIA.py --model_name ``nom_modèle`` --scaler_name ``nom_standard_scaler_modèle``
+ex : ``python gradio_defiIA.py --model_name "X_gboost_tuned_model.sav" --scaler_name 'Standard_Scaler.sav'``
 
 ## Note : le modèle Random forest est très lourd ( trop lours pour github) il est sur mon ordinateur
 
