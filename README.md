@@ -13,10 +13,17 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 &emsp; &emsp;├─models_sav/</br>
 &emsp; &emsp; &emsp; &emsp;├─ xgboost.sav </br>
 &emsp; &emsp;&emsp; &emsp; ├─ .sav</br>
-&emsp; &emsp;├─ application gradio </br>
-&emsp; &emsp;├─ Modeles.ipynb</br>
-&emsp; &emsp;├─ soumission_kaggle.ipynb
+application gradio </br>
+application  all_our_requests_done.csv #requêtes testées </br>
+Modeles.ipynb #modèles testés et analyse descriptive des variables d'entrainement </br>
+pricing_requests_done.csv #résultats requêtes testées </br>
+ExploreTestSet.ipynb #stat descriptive sur le jeu de données d'évaluation kaggle</br>
+allrequest.csv #toutes les combinaisons de variables qualitatives possibles </br>
+sample_submission.csv #génération du fichier de soumission à l'aide du modèle enregistré en .sav
 **
+
+
+
 ## Lancer l'application gradio 
 
 python gradio_defiIA.py --model_name ``nom_modèle`` --scaler_name ``nom_standard_scaler_modèle``
