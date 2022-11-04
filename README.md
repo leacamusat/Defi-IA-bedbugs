@@ -10,15 +10,6 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 -------------------------------------------
 
 
-1) mettre dans un dossier l'environnement comme ceci : /</br>
-**dossier_local /</br>
-&emsp; &emsp;├─inpainting/</br>
-&emsp; &emsp; &emsp; &emsp;├─ mask.py </br>
-&emsp; &emsp;&emsp; &emsp; ├─ discriminator.py</br>
-&emsp; &emsp; &emsp; &emsp;├─ generator.py </br>
-&emsp; &emsp;&emsp; &emsp; ├─ unet.py</br>
-&emsp; &emsp;├─ jupyter_notebook (ex : MNIST_mask.py, MNIST...)**
-
 # Organisation des fichiers 
 
 /</br> 
@@ -32,7 +23,7 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 &emsp; &emsp;├─ pricing_requests_done.csv (résultats requêtes testées) </br>
 &emsp; &emsp;├─ ExploreTestSet.ipynb (stat descriptive sur le jeu de données d'évaluation kaggle)</br>
 &emsp; &emsp;├─ allrequest.csv (toutes les combinaisons de variables qualitatives possibles) </br>
-&emsp; &emsp;├─ sample_submission.csv (génération du fichier de soumission à l'aide du modèle enregistré en .sav) **
+&emsp; &emsp;├─ sample_submission.csv (génération du fichier de soumission à l'aide du modèle enregistré en .sav)**
 
 
 
