@@ -23,16 +23,16 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 
 /</br> 
 **dossier_local /</br>
-&emsp; &emsp;├─models_sav/</br>
+&emsp; &emsp;├─models_sav/ </br>
 &emsp; &emsp; &emsp; &emsp;├─ xgboost.sav/ </br>
 &emsp; &emsp;&emsp; &emsp; ├─ .sav/ </br>
-application gradio </br>
-application  all_our_requests_done.csv #requêtes testées </br>
-Modeles.ipynb #modèles testés et analyse descriptive des variables d'entrainement </br>
-pricing_requests_done.csv #résultats requêtes testées </br>
-ExploreTestSet.ipynb #stat descriptive sur le jeu de données d'évaluation kaggle</br>
-allrequest.csv #toutes les combinaisons de variables qualitatives possibles </br>
-sample_submission.csv #génération du fichier de soumission à l'aide du modèle enregistré en .sav **
+&emsp; &emsp;├─ application gradio </br>
+&emsp; &emsp;├─application  all_our_requests_done.csv (requêtes testées) </br>
+&emsp; &emsp;├─ Modeles.ipynb (modèles testés et analyse descriptive des variables d'entrainement) </br>
+&emsp; &emsp;├─ pricing_requests_done.csv (résultats requêtes testées) </br>
+&emsp; &emsp;├─ ExploreTestSet.ipynb (stat descriptive sur le jeu de données d'évaluation kaggle)</br>
+&emsp; &emsp;├─ allrequest.csv (toutes les combinaisons de variables qualitatives possibles) </br>
+&emsp; &emsp;├─ sample_submission.csv (génération du fichier de soumission à l'aide du modèle enregistré en .sav) **
 
 
 
