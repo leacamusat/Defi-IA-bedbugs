@@ -24,8 +24,8 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 /</br> 
 **dossier_local /</br>
 &emsp; &emsp;├─models_sav/</br>
-&emsp; &emsp; &emsp; &emsp;├─ xgboost.sav </br>
-&emsp; &emsp;&emsp; &emsp; ├─ .sav</br>
+&emsp; &emsp; &emsp; &emsp;├─ xgboost.sav/ </br>
+&emsp; &emsp;&emsp; &emsp; ├─ .sav/ </br>
 application gradio </br>
 application  all_our_requests_done.csv #requêtes testées </br>
 Modeles.ipynb #modèles testés et analyse descriptive des variables d'entrainement </br>
