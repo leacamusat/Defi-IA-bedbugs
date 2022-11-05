@@ -67,7 +67,11 @@ Tâches à réasliser:
 
 Historique des requêtes: 
 ========================
-
+05/11/2022 (samedi) :
+* 486 * 2 =  requêtes : 1 utilisateur fait la même requête à j et j+1
+    - 162 fois dans A 
+    - 162 fois dans B
+    - 131 fois dans C (moins car on à plus de requêtes snirf)
 
 03/11/2022 :
 * 5 * 18 requêtes pour le belge qui n'était pas presents
