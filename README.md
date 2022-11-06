@@ -7,6 +7,14 @@ https://www.kaggle.com/code/maxhalford/tutoriel-d-fi-ia-2023/notebook
 clé : 
 f80b400f-3d29-43f0-8049-214a756ff0b3
 
+
+<font color="red"> ATTENTION </font>
+
+<font color="red">  AVANT DE GENERER LA SOUMISSION FAIRE CORRESPONDRE LE NOM DU JEU DE SET DE VARIABLES QUALITATIVES ENTRE LE FICHIER SOUMISSION ET MODELES ET GRADIO </font> 
+
+<font color="red">   Avant de soumettre toujours vérifier qu'on a bien appliqué la transformation sur les Y (cad mettre au carré) </font> 
+
+
 -------------------------------------------
 
 
@@ -34,35 +42,31 @@ ex : ``python gradio_defiIA.py --model_name "X_gboost_tuned_model.sav" --scaler_
 
 ## Note : le modèle Random forest est très lourd ( trop lours pour github) il est sur mon ordinateur
 
-Réponses à Lila :
-    Dans la commande chosen_idx = np.random.choice(idx_available, replace = False, size = nb_request), on tire aléatoirement sans remise len(df) = 468 éléments parmi une liste de taille 468: [0,1,...,467] ce qui revient exactement à choisir la liste [0,1,...,467] directement (sans avoir besoin du random.choice). Est-ce voulu ? 
+Modèles testés et améliorations (le 6 novembre 2022)  : 
+====================== 
 
-    our_requests = pandas.read_csv('all_our_requests_done.csv', header = 0) au début, ce tableau est vide non ? Pour la première utilisation, il s'agit de allrequest.csv ? J'imagine qu'à l'origine il devait y avoir marqué allrequest.csv et non pas all_our_requests_done.csv. 
-    ``Pour la première utilisation on a crée un tableau vide avec seulement les noms des colonnes qu'on souhaite ``
+On a commencé par testé des modèles en modifiant les deux variables quantitatives (en appliquant un log sur le stock et un racine carré sur le prix). 
+Ensuite, on a transformé les variables qualitatives en 0-1 hot en enlevant la première modalité pour éviter que la même information soit codée deux fois (si la variable n'appartient pas aux n-1 premières modalités, on sait en fait qu'elle appartient à la n-ième, ce qui permet d'éviter d'avoir une colonne en trop). On a également centré et réduit nos variables. 
 
-    On a days= np.random.choice(selected_days, number_days, replace=False) et days= np.random.choice(range(0,45), number_days, replace=False) à la suite donc seule la 2e version est prise en compte.
-    
+Nos premiers modèles ont été appliqués quand on avait 1 requete par utilisateur, que nous avions enlevé la variable qualitative brand car nous avions supposé que le nombre de modalité de cette variable était inclus dans la variable qualitative group, elle portait moins d'informations. 
+On a testé X_Gboost, RandomForest des modèles d'aggrégation souvent utilisés en ML car ils permettent de combiner plusieurs modèles faibles. 
+On a testé une régression lasso mais elle a donné de très faibles résultats. On a également réalisé un CatBoost un modèle aussi basé sur l'agrégation. 
 
-    On crée un "avatar_name" avec la date du jour mais après je n'ai pas l'impression qu'on stocke cette info quelque part. Une fois le tableau constitué, on ne peut pas retrouver cette info. ``en effet in stocke que l'ID c'est bizarre... j'ai créé à la fin du code une partie pour enregistrer une table de conversion entre les deux, a voir si tu veux fusionner dans nos datas, ou alor on ira juste lire ??? ``
+Ensuite, on a re réalisé des requêtes pour avoir plusieurs requêtes par utilisateur (un utilisateur peut faire deux requêtes à un jour d'intervalle). 
 
-    l'Id de a request est i dans la ligne add_to_our_requests = ... mais du coup, si on fait tourner plusieurs fois le même code, on n'aura pas des requêtes avec le même id ? comment on va faire pour les différencier ? Il ne faudrait pas mettre request_num à la place de i ? ``je ne suis pas sure d'avoir compris la question, mais je crois que le numéro de la requête c'est à quelle requete ca correspond dans notre tableau avec toutes les permutation de requests possibles qu'on a crées. 
-
-
+On a aussi décidé de rajouter la variable qualitative brand. et on a retesté nos modèles : 
+On a que l'accuracy liée au MSE a fortement augmenté pour le modèle XGboost. 
 
 Tâches à réasliser: 
 ======================
 
-- [X] 1° analyser les habitudes de navigation (set d'évaluation) => optimisation des requêtes. (Lila et autre)
-  * Première description du jeu de données
-  * Calcul des villes et langues les plus recherchées
-  * Répartition de la variable date
-  * Calcul du nombre de requêtes par personne
-  * Calul du nombre de personnes ayant utilisé plusieurs langues pour leurs requêtes
-  * Calul du nombre de personnes ayant utilisé le téléphone et l'ordinateur
+- [ ] 1° Continuer le travail sur l'interprétabilité (en utilisant le TP précédent d'IA framework) 
 
-- [ ] 2° construire une grande matrice avec toutes les combinaisons possibles en ligne (ville, langue, mobile). Pour les dates faire un tirage aléatoire à posteriori (une au début puis plusieurs, ATTENTION : ranger dans l'ordre décroissant les requêtes 
+- [ ] 2° Faire le docker 
 
-- [ ] 3° créer le tirage et créer la requête. 
+- [ ] 3° requêtes avec plusieurs utilisateurs encore 
+
+- [ ] 4° Chercher des nouveaux features à créer 
 
 
 Historique des requêtes: 
