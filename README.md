@@ -7,8 +7,7 @@ https://www.kaggle.com/code/maxhalford/tutoriel-d-fi-ia-2023/notebook
 clé : 
 f80b400f-3d29-43f0-8049-214a756ff0b3
 
-
-<font color="red"> ATTENTION </font>
+- ![#f03c15](ATTENTION) `#f03c15`
 
 <font color="red">  AVANT DE GENERER LA SOUMISSION FAIRE CORRESPONDRE LE NOM DU JEU DE SET DE VARIABLES QUALITATIVES ENTRE LE FICHIER SOUMISSION ET MODELES ET GRADIO </font> 
 
