@@ -10,8 +10,8 @@ f80b400f-3d29-43f0-8049-214a756ff0b3
 
 ```diff
 - ATTENTION
--  AVANT DE GENERER LA SOUMISSION FAIRE CORRESPONDRE LE NOM DU JEU DE SET DE VARIABLES QUALITATIVES ENTRE LE FICHIER SOUMISSION ET MODELES ET GRADIO 
-- Avant de soumettre toujours vérifier qu'on a bien appliqué la transformation sur les Y (cad mettre au carré) </font> 
+! AVANT DE GENERER LA SOUMISSION FAIRE CORRESPONDRE LE NOM DU JEU DE SET DE VARIABLES QUALITATIVES ENTRE LE FICHIER SOUMISSION ET MODELES ET GRADIO 
+! Avant de soumettre toujours vérifier qu'on a bien appliqué la transformation sur les Y (cad mettre au carré)
 ```
 
 -------------------------------------------
