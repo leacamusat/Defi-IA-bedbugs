@@ -67,6 +67,7 @@ Tâches à réasliser:
 
 - [ ] 4° Chercher des nouveaux features à créer 
 
+- [ ] 5° créer des pipelines de manière à n'avoir à enregistrer que le modèle et pas aussi le standard_scaler (easier)
 
 Historique des requêtes: 
 ========================
