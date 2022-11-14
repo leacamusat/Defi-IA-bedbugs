@@ -71,6 +71,10 @@ Tâches à réasliser:
 
 Historique des requêtes: 
 ========================
+14/11/2022 (lundi) : 500 requêtes
+* 243 * 2 = requ^tes : 1 avatar fait la même requete a j et j+5
+* 14 requêtes un peu random et pour jour 34
+
 05/11/2022 (samedi) :
 * 486 * 2 =  requêtes : 1 utilisateur fait la même requête à j et j+1
     - 162 fois dans A 
