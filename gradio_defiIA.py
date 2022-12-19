@@ -1,23 +1,17 @@
-import argparse
 import gradio as gr
-import torch
 import pandas as pd 
 import numpy as np
-import matplotlib.pyplot as plt #to plot graphs
-import seaborn as sns #to plot graphs
-import pylab 
 #----- Machine Learning Preprocessing 
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
-import scipy.stats as stats
-import random
 #save model 
 import pickle 
 import argparse #arguments à passer avec la ligne de commande :)
 from math import *
 import xgboost as xgb
 import category_encoders 
+import warnings
+warnings.filterwarnings('ignore')
 #pour l'appeler : python gradio_defiIA.py --model_name "2000_XGboost_target_encoding_12-11.sav"
 parser = argparse.ArgumentParser()
 
@@ -133,21 +127,21 @@ def predict_price(hotel_id_g,stock_g,city_g,date_g,language_g,mobile_g, request_
     df = target_encoding.transform(df) #target encoding appliqué à df 
     # Liste des variables categorical:
    
-    return "la chambre coutera" + str((loaded_model.predict(df))**2) + " €" #prédiction avec le modèle (on met au carré car on avait transformé avec une racine carrée 
+    return "la chambre coutera " + str( round((loaded_model.predict(df)[0])**2,2) ) + " €" #prédiction avec le modèle (on met au carré car on avait transformé avec une racine carrée 
 
 
 if __name__=='__main__':
    
     
     gr.Interface(fn=predict_price, 
-                inputs=[gr.Slider(0, 998, 1, label="hotel_id"), #curseur entre 0 et 998 de 1 en 1 
-                gr.Slider(0, 199, 1, label="stock"), #curseur de 1 et 1 
+                inputs=[gr.Slider(minimum=0, maximum=998, value=1, step=1, label="hotel_id"), #curseur entre 0 et 998 de 1 en 1 
+                gr.Slider(minimum=0, maximum=199, value=1, step=1, label="stock"), #curseur de 1 et 1 
                 gr.Dropdown(['amsterdam', 'copenhagen', 'madrid','paris', 'rome', 'sofia', 'valletta', 'vienna', 'vilnius'], label="ville"),#liste déroulante 
-                gr.Slider(0,44, 1, label="date"),
+                gr.Slider(minimum=0,maximum=44, value=1, step=1, label="date"),
                 gr.Dropdown(['austrian', 'belgium', 'bulgarian', 'croatian', 'cypriot', 'czech', 'danish', 'dutch', 'estonian', 'finnish', 'french', 'german', 'greek', 'hungarian', 'irish', 'italian', 'latvian', 'lithuanian', 'luxembourgish', 'maltese', 'polish', 'portuguese', 'romanian', 'slovakian', 'slovene', 'spanish','swedish'], label="langage"),
                 gr.Checkbox(label="mobile?"), #case à cocher 
-                gr.Slider(0,4, 1, label="nombre de fois que vous avez fait la requête"), #curseur de 1 et 1 
-                gr.Textbox(label="request_number"), #case à remplir
+                gr.Slider(minimum=0,maximum=4, value=1, step=1, label="nombre de fois que vous avez fait la requête"), #curseur de 1 et 1 
+                gr.Textbox(value=1, label="request_number"), #case à remplir
                 gr.Dropdown(['Accar Hotels', 'Boss Western', 'Chillton Worldwide', 'Independant',
  'Morriott International', 'Yin Yang'], label="group"),
                 gr.Dropdown(['8 Premium', 'Ardisson', 'Boss Western' ,'Chill Garden Inn', 'Corlton',
